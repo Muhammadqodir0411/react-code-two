@@ -5,15 +5,12 @@ import {
   MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Button, Layout, Menu, Modal, theme } from "antd";
 import './AdminLayout.css'
 import { IS_LOGIN } from "../../constants";
 import PropTypes from "prop-types";
 const { Header, Sider, Content } = Layout;
-
-
 
 
 const AdminLayout = ({setIsLogin}) => {
@@ -54,12 +51,12 @@ const AdminLayout = ({setIsLogin}) => {
             },
             {
               key: "/teachers",
-              icon: <VideoCameraOutlined />,
+              icon: <UserOutlined />,
               label: <Link to='/teachers'>Teachers</Link>,
             },
             {
               key: "/students",
-              icon: <UploadOutlined />,
+              icon: <UserOutlined />,
               label: <Link to='/students'>Students</Link>,
             },
             {
